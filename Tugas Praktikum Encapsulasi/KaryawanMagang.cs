@@ -8,15 +8,15 @@ namespace Tugas_Praktikum_Encapsulasi
 {
     internal class KaryawanMagang : Karyawan
     {
-        public override double HitungGaji()
-        {
-            double gajiTotal = base.HitungGaji();
-            return gajiTotal;
-        }
-        public override void TampilkanInfo()
+        public KaryawanMagang() 
         {
             jenisKaryawan = "Karyawan Magang";
-            base.TampilkanInfo();
+        }
+        public override double HitungGaji()
+        {
+            
+            double gajiTotal = base.HitungGaji();
+            return gajiTotal;
         }
     }
 }

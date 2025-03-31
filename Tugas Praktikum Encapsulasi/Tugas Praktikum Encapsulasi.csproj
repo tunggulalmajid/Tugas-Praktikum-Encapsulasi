@@ -47,6 +47,7 @@
     <Compile Include="KaryawanKontrak.cs" />
     <Compile Include="KaryawanMagang.cs" />
     <Compile Include="KaryawanTetap.cs" />
+    <Compile Include="Penampung.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -8,16 +8,16 @@ namespace Tugas_Praktikum_Encapsulasi
 {
     internal class KaryawanKontrak : Karyawan
     {
+        
         private double PotonganKontrak = 200000;
+        public KaryawanKontrak()
+        {
+            jenisKaryawan = "Karyawan Kontrak";
+        }
         public override double HitungGaji()
         {
             double gajiTotal = GajiPokok - PotonganKontrak;
             return gajiTotal;
-        }
-        public override void TampilkanInfo()
-        {
-            jenisKaryawan = "Karyawan Kontrak";
-            base.TampilkanInfo();
         }
     }
 }

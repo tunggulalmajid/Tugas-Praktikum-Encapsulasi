@@ -63,13 +63,10 @@ namespace Tugas_Praktikum_Encapsulasi
             double gajiTotal = GajiPokok ;
             return gajiTotal;
         }
-        public virtual void TampilkanInfo()
+        public override string ToString()
         {
             double jumlahGaji = HitungGaji();
-            Console.WriteLine($"Nama Karyawan : {Nama}" +
-                $"\nJenis Karyawan : {jenisKaryawan}" +
-                $"\nId Karyawan : {Id}" +
-                $"\nTotal Gaji : {jumlahGaji}\n");
+            return $"Nama Karyawan : {Nama}, Jenis Karyawan : {jenisKaryawan}, Id Karyawan : {Id}, Total Gaji : {jumlahGaji}";
         }
     }
 }
