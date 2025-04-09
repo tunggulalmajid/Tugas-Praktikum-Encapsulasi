@@ -66,7 +66,7 @@ namespace Tugas_Praktikum_Encapsulasi
         public override string ToString()
         {
             double jumlahGaji = HitungGaji();
-            return $"Nama Karyawan : {Nama}, Jenis Karyawan : {jenisKaryawan}, Id Karyawan : {Id}, Total Gaji : {jumlahGaji}";
+            return $"Nama Karyawan : {Nama}\nJenis Karyawan : {jenisKaryawan}\nId Karyawan : {Id}\nTotal Gaji : {jumlahGaji}";
         }
     }
 }

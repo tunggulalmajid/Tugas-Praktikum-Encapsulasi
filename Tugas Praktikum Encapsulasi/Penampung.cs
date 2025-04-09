@@ -21,7 +21,7 @@ namespace Tugas_Praktikum_Encapsulasi
         {
             for (int i = 0; i < PenampungKaryawan.Count; i++)
             {
-                Console.WriteLine($"{i + 1}. {PenampungKaryawan[i]}");
+                Console.WriteLine($"{PenampungKaryawan[i]}\n");
             }
         }
     }
