@@ -93,7 +93,7 @@ namespace Tugas_Praktikum_Encapsulasi
                 
                 garis();
                 penampung.TambahKaryawan(karyawanTetap);
-                Console.WriteLine("Karyawan Tetap Berhasil Ditambahkan");
+                //Console.WriteLine("Karyawan Tetap Berhasil Ditambahkan");
                 garis();
 
                 Enter();
@@ -112,9 +112,9 @@ namespace Tugas_Praktikum_Encapsulasi
                 Console.Write("Masukkan Gaji Pokok Karyawan Kontrak >> ");
                 karyawanKontrak.GajiPokok = Convert.ToDouble(Console.ReadLine());
 
-                penampung.TambahKaryawan(karyawanKontrak);
                 garis();
-                Console.WriteLine("Karyawan Kontrak Berhasil Ditambahkan");
+                penampung.TambahKaryawan(karyawanKontrak);
+                //Console.WriteLine("Karyawan Kontrak Berhasil Ditambahkan");
                 garis();
 
                 Enter(); 
@@ -133,10 +133,10 @@ namespace Tugas_Praktikum_Encapsulasi
                 Console.Write("Masukkan Gaji Pokok Karyawan Magang >> ");
                 karyawanMagang.GajiPokok = Convert.ToDouble(Console.ReadLine());
 
-                penampung.TambahKaryawan(karyawanMagang);
 
                 garis();
-                Console.WriteLine("Karyawan Magang Berhasil Ditambahkan");
+                penampung.TambahKaryawan(karyawanMagang);
+                //Console.WriteLine("Karyawan Magang Berhasil Ditambahkan");
                 garis();
                 Enter();
                 awal();
@@ -144,8 +144,9 @@ namespace Tugas_Praktikum_Encapsulasi
             else
             {
                 Console.WriteLine("Pilihan Tidak Valid");
+                garis();
                 Enter();
-                awal();
+                TambahkanKaryawan();
             }
         }
         public static void absen()

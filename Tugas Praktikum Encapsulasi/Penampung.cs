@@ -15,13 +15,29 @@ namespace Tugas_Praktikum_Encapsulasi
         }
         public void TambahKaryawan(Karyawan karyawan)
         {
-            PenampungKaryawan.Add(karyawan);
+            if (karyawan.Nama.Length > 0 && karyawan.Id.Length > 2 && karyawan.GajiPokok > 0)
+            {
+                PenampungKaryawan.Add(karyawan); 
+                Console.WriteLine($"{karyawan.jenisKaryawan} Berhasil Ditambahkan");
+
+            }
+            else
+            {
+                Console.WriteLine("Karyawan tidak Berhasil ditambahkan, silahkan ulangi proses");
+            }
         }
         public void TampilkanKaryawan()
         {
-            for (int i = 0; i < PenampungKaryawan.Count; i++)
+            if (PenampungKaryawan.Count > 0)
             {
-                Console.WriteLine($"{PenampungKaryawan[i]}\n");
+                for (int i = 0; i < PenampungKaryawan.Count; i++)
+                {
+                    Console.WriteLine($"{PenampungKaryawan[i]}\n");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Belum Ada Karyawan yang di Inputkan");
             }
         }
     }

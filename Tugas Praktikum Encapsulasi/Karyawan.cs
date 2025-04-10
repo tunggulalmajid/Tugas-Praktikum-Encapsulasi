@@ -10,7 +10,7 @@ namespace Tugas_Praktikum_Encapsulasi
     {
         private string _nama, _id;
         private double _gajiPokok;
-        protected string jenisKaryawan = "Karyawan";
+        public string jenisKaryawan = "Karyawan";
         public string Nama
         {
             get { return _nama; }
@@ -22,8 +22,9 @@ namespace Tugas_Praktikum_Encapsulasi
                 }
                 else 
                 {
-                    _nama = "Kosong";
+                    _nama = "";
                     Console.WriteLine("Nama Harus Melebihi 2 Karakter");
+                    Program.Enter();
                 }
             }
         }
@@ -38,7 +39,7 @@ namespace Tugas_Praktikum_Encapsulasi
                 }
                 else 
                 {
-                    _id = "Kosong";
+                    _id = "";
                     Console.WriteLine("Id Tidak Boleh Kosong");
                 }
             }
@@ -48,7 +49,7 @@ namespace Tugas_Praktikum_Encapsulasi
             get { return _gajiPokok; }
             set
             {
-                if (value > 0)
+                if (value > 0 && Convert.ToString(value) != null)
                 {
                     _gajiPokok = value;
                 }
